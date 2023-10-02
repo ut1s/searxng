@@ -4,10 +4,14 @@
 Engine Implementations
 ======================
 
-Framework Components
-====================
+.. contents::
+   :depth: 2
+   :local:
+   :backlinks: entry
+
 
 .. toctree::
+   :caption: Framework Components
    :maxdepth: 2
 
    enginelib
@@ -22,7 +26,7 @@ The :py:obj:`engine_type <searx.enginelib.Engine.engine_type>` of an engine
 determines which :ref:`search processor <searx.search.processors>` is used by
 the engine.
 
-In this section a list of the enignes that are documented is given, a complete
+In this section a list of the engines that are documented is given, a complete
 list of the engines can be found in the source under: :origin:`searx/engines`.
 
 .. _online engines:
@@ -40,6 +44,12 @@ Online Engines
 
    demo/demo_online
    xpath
+   mediawiki
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
    online/*
 
 .. _offline engines:

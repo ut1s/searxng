@@ -51,7 +51,6 @@ from . import (
     http_accept,
     http_accept_encoding,
     http_accept_language,
-    http_connection,
     http_user_agent,
     ip_limit,
     ip_lists,
@@ -71,7 +70,7 @@ LIMITER_CFG_SCHEMA = Path(__file__).parent / "limiter.toml"
 """Base configuration (schema) of the botdetection."""
 
 LIMITER_CFG = Path('/etc/searxng/limiter.toml')
-"""Lokal Limiter configuration."""
+"""Local Limiter configuration."""
 
 CFG_DEPRECATED = {
     # "dummy.old.foo": "config 'dummy.old.foo' exists only for tests.  Don't use it in your real project config."
@@ -136,7 +135,6 @@ def filter_request(request: flask.Request) -> werkzeug.Response | None:
             http_accept,
             http_accept_encoding,
             http_accept_language,
-            http_connection,
             http_user_agent,
             ip_limit,
         ]:
